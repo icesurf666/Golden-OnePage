@@ -1,0 +1,105 @@
+@media(max-width: 1200px)
+	.container
+		width: 960px
+
+@media(max-width: 992px)
+	.container
+		width: 720px
+	.meet
+		font-size: 50px
+	.about
+		&-block
+			&:nth-child(1), &:nth-child(3)
+				padding-right: 12%
+			&:nth-child(2), &:nth-child(4)
+				padding-left: 12%
+
+
+@media(max-width: 768px)
+	.container
+		width: 540px
+	.welcome
+		padding-top: 293px
+	.meet
+		font-size: 44px
+	.menu
+		display: none
+	.menu-mobile
+		display: block
+		z-index: 9999
+		position: absolute
+		top: 24px
+		right: 24px
+		width: 23px
+		height: 14px
+		background: url(../img/burger.png)
+
+	.menu-mobile__close
+		position: absolute
+		top: 24px
+		right: 24px
+		width: 17px
+		height: 17px
+		background: url(../img/x.png) no-repeat
+	.services
+		&-blocks
+			justify-content: center
+	.team
+		&-block
+			&:nth-child(3)
+				margin-top: 10px
+	.portfolio
+		&-blocks
+			justify-content: center
+	.about
+		&-block
+			&:before
+				display: none
+			&__wrap
+				width: 100%
+			&:nth-child(5)
+				justify-content: flex-end
+				padding-right: 12%
+
+@media(max-width: 576px)
+	.container
+		width: 420px
+	.welcome
+		font-size: 30px
+	.meet
+		font-size: 33px
+	.about
+		&-block
+			flex-flow: column wrap
+			justify-content: center
+			&__wrap
+			&__subtitle, &__title
+				margin-top: 5px
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+				justify-content: center
+				padding-left: 0
+				padding-right: 0
+				.about-block__wrap
+					text-align: center
+				.about-block__title
+					text-align: center
+
+				.about-block__img
+					margin: 0 auto
+	.footer
+		&-items
+			margin-left: 20px
+@media(max-width: 455px)
+	.container
+		width: 390px
+	.meet
+		font-size: 28px
+@media(max-width: 425px)
+	.container
+		width: 100%
+	.welcome
+		font-size: 25px
+	.footer
+		&-item
+			width: 30px
+			height: 30px

@@ -1,0 +1,409 @@
+@import "vars"
+
+// Шрифты //
+@import "fonts"
+
+// База //
+html, body
+	width: 100%
+	height: 100%
+h1, h2, h3, h4, h5, h6, ul, p
+	padding: 0
+	margin: 0
+ul
+	list-style: none
+\:focus, \:active
+	outline: 0 !important
+a, a:focus, a:active, a:hover
+	text-decoration: none !important
+*
+	box-sizing: border-box
+	font-family: 'Montserrat', sans-serif
+
+body
+	font-weight: 400
+	font-size: 14px
+
+// Стили //
+.container
+	width: 934px
+	margin: 0 auto
+.header
+	background: url("../img/bg.png") center center no-repeat
+	height: 100vh
+.menu
+	padding-top: 73px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-weight: 400
+	text-transform: uppercase
+	&-logo
+		flex-grow: 1
+	&-item
+		flex-grow: 0.05
+		&__link
+			color: #ffffff
+.welcome
+	padding-top: 212px
+	text-align: center
+	color: #ffffff
+	font-size: 40px
+	font-style: italic
+.meet
+	text-align: center
+	margin-top: 42px
+	color: #ffffff
+	font-size: 75px
+	font-weight: 700
+	text-transform: uppercase
+.button
+	margin-top: 59px
+	margin-bottom: 160px
+	display: flex
+	justify-content: center
+.tell
+	width: 240px
+	height: 65px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: #fed136
+	color: #ffffff
+	font-size: 18px
+	font-weight: 700
+	text-transform: uppercase
+.services
+	&-name
+		margin-top: 120px
+		text-align: center
+		color: #222222
+		font-family: Montserrat
+		font-size: 40px
+		font-weight: 700
+		line-height: 75px
+		text-transform: uppercase
+	&-subname
+		text-align: center
+		color: #777777
+		font-family: "Droid Serif"
+		font-size: 16px
+		font-style: italic
+	&-blocks
+		margin-bottom: 118px
+		display: flex
+		justify-content: space-between
+		flex-flow: row wrap
+	&-block
+		text-align: center
+		&__img
+			margin-top: 80px
+
+		&__title
+			color: #222222
+			font-size: 18px
+			font-weight: 700
+			line-height: 75px
+		&__desc
+			width: 274px
+			color: #777777
+			font-family: "Roboto Slab"
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: -0.35px
+.portfolio
+	background-color: #f7f7f7
+	&-title
+		padding-top: 120px
+		color: #222222
+		font-family: Montserrat
+		text-align: center
+		font-size: 40px
+		font-weight: 700
+		line-height: 75px
+		text-transform: uppercase
+	&-subtitle
+		margin-top: 5px
+		color: #777777
+		font-family: "Droid Serif"
+		text-align: center
+		font-size: 16px
+		font-style: italic
+	&-blocks
+		margin-top: 26px
+		padding-bottom: 120px
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-between
+
+	&-block
+		margin-top: 50px
+		width: 291px
+		height: 393px
+		background-color: #ffffff
+		text-align: center
+		&__title
+			margin-top: 29px
+			color: #333333
+			font-family: Montserrat
+			font-size: 18px
+			font-weight: 700
+		&__subtitle
+			margin-top: 4px
+			color: #737373
+			font-family: "Droid Serif"
+			font-size: 14px
+			font-style: italic
+.about
+	&-title
+		text-align: center
+		padding-top: 120px
+		color: #222222
+		font-family: Montserrat
+		font-size: 40px
+		font-weight: 700
+		line-height: 75px
+		text-transform: uppercase
+	&-subtitle
+		text-align: center
+		margin-top: 5px
+		color: #777777
+		font-family: "Droid Serif"
+		font-size: 16px
+		font-style: italic
+	&-blocks
+		margin-top: 85px
+		margin-bottom: 120px
+		display: flex
+		flex-flow: column wrap
+
+	&-block
+		margin-top: 90px
+		position: relative
+		display: flex
+		align-items: flex-start
+		&:before
+			content: ''
+			position: absolute
+			left: 50%
+			top: -94px
+			width: 3px
+			height: 94px
+			background-color: #f1f1f1
+		&__wrap
+			width: 33.5%
+		&__title
+			color: #222222
+			font-family: Montserrat
+			font-size: 18px
+			font-weight: 700
+			letter-spacing: -0.45px
+		&__subtitle
+			//width: 305px
+			color: #777777
+			font-family: "Roboto Slab"
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: -0.35px
+		&:nth-child(1)
+			margin-top: 0
+			&:before
+				display: none
+		&:nth-child(5)
+			justify-content: center
+		&:nth-child(1), &:nth-child(3)
+			justify-content: flex-end
+			padding-left: 3%
+			flex-direction: row-reverse
+			.about-block__wrap
+				text-align: right
+			.about-block__img
+				margin-left: 45px
+		&:nth-child(2), &:nth-child(4)
+			justify-content: flex-end
+			padding-right: 3%
+			.about-block__img
+				margin-right: 45px
+.team
+	background-color: #f9f9f9
+	&-title
+		text-align: center
+		padding-top: 120px
+		color: #222222
+		font-family: Montserrat
+		font-size: 40px
+		font-weight: 700
+		text-transform: uppercase
+	&-subtitle
+		text-align: center
+		margin-top: 14px
+		color: #777777
+		font-family: "Droid Serif"
+		font-size: 16px
+		font-style: italic
+	&-blocks
+		margin-top: 83px
+		display: flex
+		justify-content: space-around
+		flex-flow: row wrap
+	&-block
+		&__title
+			text-align: center
+			margin-top: 26px
+			color: #222222
+			font-size: 16px
+			font-weight: 700
+			letter-spacing: -0.4px
+		&__subtitle
+			margin-top: 7px
+			text-align: center
+			color: #777777
+			font-family: "Roboto Slab"
+			font-size: 14px
+			font-weight: 400
+			letter-spacing: -0.35px
+		&__items
+			margin-top: 14px
+			display: flex
+			justify-content: center
+		&__item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 41px
+			height: 41px
+			border: 3px solid #222222
+			border-radius: 50%
+			background-color: #f9f9f9
+			&:nth-child(2)
+				margin-left: 9px
+				margin-right: 9px
+	&-desc
+		margin: 0 auto
+		margin-top: 50px
+		padding-bottom: 117px
+		text-align: center
+		width: 63%
+		color: #777777
+		font-family: "Roboto Slab"
+		font-size: 16px
+		font-weight: 400
+		letter-spacing: -0.4px
+.support
+	padding-top: 67px
+	padding-bottom: 61px
+	&-items
+		display: flex
+		justify-content: space-around
+		flex-flow: row wrap
+.contact
+	background: url("../img/contact-bg.png") left top no-repeat
+	&-title
+		text-align: center
+		padding-top: 110px
+		color: #ffffff
+		font-size: 40px
+		font-weight: 700
+		text-transform: uppercase
+		letter-spacing: -1px
+	&-subtitle
+		margin-top: 10px
+		text-align: center
+		color: #777777
+		font-family: "Droid Serif"
+		font-size: 16px
+		font-style: italic
+	&-wrapper
+		margin-top: 75px
+		display: flex
+		justify-content: space-around
+		flex-flow: row wrap
+	&-data
+		display: flex
+		flex-direction: column
+		width: 48%
+		&__input
+			margin-top: 29px
+			height: 50px
+			padding-left: 20px
+			padding-top: 7px
+			border: 1px solid #cccccc
+			background-color: #ffffff
+			&:nth-child(1)
+				margin-top: 0
+			&::placeholder
+				color: #bbbbbb
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: -0.35px
+
+	&-message
+		width: 49%
+		&__area
+			width: 100%
+			height: 209px
+			padding-left: 20px
+			padding-top: 20px
+			border: 1px solid #cccccc
+			background-color: #ffffff
+			&::placeholder
+				color: #bbbbbb
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: -0.35px
+	&-button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 240px
+		height: 66px
+		background-color: #fed136
+		color: #ffffff
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+	&-send
+		display: flex
+		justify-content: center
+		margin-top: 31px
+		padding-bottom: 114px
+.footer
+	padding-top: 20px
+	padding-bottom: 32px
+	&-wrapper
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	&-inc
+		color: #555555
+		letter-spacing: -0.35px
+	&-items
+		display: flex
+		margin-left: 119px
+	&-item
+		margin-right: 9px
+		width: 41px
+		height: 40px
+		background-color: #222222
+		border-radius: 50%
+		color: #ffffff
+		display: flex
+		align-items: center
+		justify-content: center
+.menu-mobile, .menu-m
+	display: none
+.menu-m
+	position: fixed
+	z-index: 9999
+	background: gray
+	height: 435px
+	width: 100%
+	padding-top: 100px
+.menu-m__item
+	text-align: center
+.menu-m__link
+	font-size: 40px
+	color: #ffffff
+	text-decoration: none
+// Адаптив //
+@import "media"
